@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Sora;
+}
+.font_sans {
+  font-family: "DM Sans" !important;
+}
+//font size
+.font_20 {
+  font-size: clamp(10px, 8vw, 20px) !important;
+}
+.font_22 {
+  font-size: clamp(12px, 8vw, 22px) !important;
+}
+.font_25 {
+  font-size: clamp(15px, 8vw, 25px);
+}
+.font_30 {
+  font-size: clamp(15px, 8vw, 30px);
+}
+.font_13 {
+  font-size: clamp(10px, 8vw, 13px);
+}
+.font_14 {
+  font-size: clamp(10px, 2vw, 14px);
+}
+.font_15 {
+  font-size: clamp(10px, 2vw, 14px);
+}
+.font_16 {
+  font-size: clamp(10px, 2.5vw, 16px);
+}
+.font_18 {
+  font-size: clamp(10px, 8vw, 18px);
+}
+
+.font_45 {
+  font-size: clamp(20px, 8vw, 45px);
+}
+.font_48 {
+  font-size: clamp(20px, 8vw, 48px);
+}
+//font wweight
+
+.font_weight_100 {
+  font-weight: 100;
+}
+.font_weight_200 {
+  font-weight: 200;
+}
+.font_weight_300 {
+  font-weight: 300;
+}
+.font_weight_400 {
+  font-weight: 400;
+}
+.font_weight_500 {
+  font-weight: 500;
+}
+.font_weight_600 {
+  font-weight: 600 !important;
+}
+.font_weight_700 {
+  font-weight: 700;
+}
+.font_weight_080 {
+  font-weight: 800;
+}
+.font_weight_900 {
+  font-weight: 900;
+}
+.font_weight_1000 {
+  font-weight: 1000;
+}
+/* object-fit */
+.object_contain {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.object_cover {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* cursor */
+.cursor_pointer {
+  cursor: pointer;
+}
+//default padding
+.p_1 {
+  padding-top: 55px;
+}
+//text transform
+.uppercase {
+  text-transform: uppercase;
+}

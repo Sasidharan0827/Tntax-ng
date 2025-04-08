@@ -1,0 +1,163 @@
+button {
+  all: unset;
+}
+// .collab_banner {
+//   height: 700px;
+// }
+.font_color_black {
+  color: black;
+}
+.background_color_blue {
+  background-color: #062f88;
+}
+.font_color_white {
+  color: white;
+}
+.font_color_blue {
+  color: #062f88;
+}
+.accordion-button:not(.collapsed) {
+  color: none !important  ;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+  background-color: none;
+}
+.accordion-button.collapsed {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.accordion-header {
+  background-color: none !important;
+}
+.arrow {
+  height: 40px;
+  width: 40px;
+}
+
+.accordion-button.collapsed {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-item {
+  background-color: transparent !important;
+  border: none;
+}
+
+.accordion-body {
+  background-color: transparent !important;
+}
+
+.top_bar_color {
+  background-color: #062f88;
+}
+.font_color_white {
+  color: white;
+}
+.font_color_grey {
+  color: #878787;
+}
+.sec_img_wrapper {
+  height: 90px;
+}
+.arrow_rotate {
+  rotate: 30deg;
+}
+
+.testimonial_card {
+  width: 300px !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.testimonial_Slider {
+  width: 310px !important;
+}
+
+.border_15 {
+  border-radius: 15px;
+}
+.border_20 {
+  border-radius: 20px;
+}
+.fit_width {
+  width: fit-content !important;
+}
+
+.news_border {
+  border: 1px solid #878787;
+}
+// ------------------joinus-imagegrid-------------
+
+.container_grid {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  flex: 1;
+}
+.container_grid .card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  flex: 1;
+  height: 400px;
+  margin: 0 5px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.3s all ease;
+}
+.container_grid.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container_grid .card.active {
+  flex: 4;
+}
+.join_us_card_wrapper {
+  position: relative;
+}
+
+.join_us_content {
+  position: absolute;
+  z-index: 3;
+  bottom: 80px;
+  left: 60px;
+}
+.btn_background_black {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+}
+.w_80 {
+  width: 80%;
+}
+@media screen and (max-width: 425px) {
+  .join_us_content {
+    position: absolute;
+    z-index: 3;
+    bottom: 10px;
+    left: 2px;
+  }
+}

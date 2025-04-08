@@ -1,0 +1,50 @@
+.email_input_bar {
+  outline: none;
+  border: none;
+}
+.background_color_blue {
+  background-color: #062f88;
+}
+.email_address {
+  border: 1px solid #878787;
+}
+.fit_width {
+  width: fit-content;
+}
+.border_30 {
+  border-radius: 30px;
+}
+.footer_section {
+  border: 1px solid #878787;
+}
+.border_right {
+  border-right: 1px solid #878787;
+}
+.font_color_blue {
+  color: #062f88;
+}
+.font_color_grey {
+  color: #878787;
+}
+.font_color_black {
+  color: black;
+}
+.send_icon {
+  padding: 10px;
+}
+@media screen and (max-width: 324px) {
+  .footer_section {
+    border: none;
+  }
+  .border_right {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer_section {
+    border: none;
+  }
+  .border_right {
+    border-right: none;
+  }
+}
