@@ -1,8 +1,160 @@
 <div class="top_bar top_bar_color pt-5 pb-0"></div>
 <nav class="navbar nav_bar_bg">
   <div
-    class="ms-5 me-5 d-flex justify-content-between align-items-center w-100"
+    class="ms-5 me-5 d-flex gap-3 justify-content-lg-between justify-content-sm-start align-items-center w-100"
   >
+    <div class="toogle_bar d-lg-none">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+      >
+        <i class="fa-solid fa-bars font_30" style="color: #0a0a0a"></i>
+      </button>
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <div class="offcanvas-title" id="offcanvasScrollingLabel">
+            <div class="brand_logo_warpper">
+              <img src="../../../assets/brand_logo.png" alt="" />
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="fa-solid fa-xmark" style="color: black"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <button
+            class="hone_button font_20 font_weight_400 font_color_grey d-block pb-3"
+          >
+            Home
+          </button>
+          <button
+            class="hone_button font_20 font_weight_400 font_color_grey d-block pb-3"
+          >
+            About us
+          </button>
+
+          <div class="dropdown pb-3 m-0 d-block">
+            <a
+              class="dropdown-toggle p-0 font_20 font_weight_400 font_color_grey"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Our Service
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li>
+                <a
+                  class="dropdown-item font_20 font_weight_400 font_color_grey"
+                  href="#"
+                  >Action</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item font_20 font_weight_400 font_color_grey"
+                  href="#"
+                  >Another action</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item font_20 font_weight_400 font_color_grey"
+                  href="#"
+                  >Something else here</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            class="hone_button font_20 font_weight_400 font_color_grey d-block pb-3"
+          >
+            Newsroom
+          </button>
+          <button
+            class="hone_button font_20 font_weight_400 font_color_grey d-block pb-3"
+          >
+            Events
+          </button>
+          <button
+            class="hone_button font_20 font_weight_400 font_color_grey d-block pb-3"
+          >
+            Contact
+          </button>
+
+          <div class="d-block">
+            <button
+              class="font_20 font_weight_400 pt-2 pb-2 ps-5 pe-5 rounded-pill top_bar_color font_color_white"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">
+            Offcanvas with backdrop
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>.....</p>
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            Backdroped with scrolling
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>
+            Try scrolling the rest of the page to see this option in action.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="brand_logo">
       <div class="brand_logowarpper">
         <img src="../../assets/brand_logo.png" class="object_cover" alt="" />
@@ -11,6 +163,7 @@
 
     <div
       class="menu d-flex justify-content-center align-items-center gap-3 d-none d-lg-flex cursor_pointer"
+      id="button-container"
     >
       <button class="hone_button font_20 font_weight_400 font_color_grey">
         Home
@@ -18,7 +171,6 @@
       <button class="hone_button font_20 font_weight_400 font_color_grey">
         About us
       </button>
-      <button class="hone_button font_20 font_weight_400"></button>
 
       <div class="dropdown p-0 m-0">
         <a
@@ -66,41 +218,10 @@
         Contact
       </button>
       <button
-        class="hone_button font_20 font_weight_400 pt-2 pb-2 ps-5 pe-5 rounded-pill top_bar_color font_color_white"
+        class="font_20 font_weight_400 pt-2 pb-2 ps-5 pe-5 rounded-pill top_bar_color font_color_white"
       >
         Login
       </button>
-    </div>
-    <div class="toogle_button d-lg-none">
-      <button
-        class="btn"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight"
-      >
-        <i class="fa-solid fa-bars font_30" style="color: #0a0a0a"></i>
-      </button>
-
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-          <button
-            type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          >
-            <i class="fa-solid fa-xmark font_20" style="color: #0f0f0f"></i>
-          </button>
-        </div>
-        <div class="offcanvas-body">...</div>
-      </div>
     </div>
   </div>
 </nav>

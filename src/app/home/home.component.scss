@@ -153,11 +153,3 @@ button {
 .w_80 {
   width: 80%;
 }
-@media screen and (max-width: 425px) {
-  .join_us_content {
-    position: absolute;
-    z-index: 3;
-    bottom: 10px;
-    left: 2px;
-  }
-}
